@@ -1,0 +1,11 @@
+:root {
+    --main-color: #912A2F;
+    --light-accent: #FCD205;
+    --light-shades: #DEECE4;
+    --dark-accent: #97A8B4;
+    --dark-shades: #262638;
+}
+
+nav {
+    background-color: var(--main-color);
+}
