@@ -9,3 +9,77 @@
 nav {
     background-color: var(--main-color);
 }
+
+a {
+    text-decoration: none;
+    color: var(--light-shades);
+}
+
+a:hover {
+    color: var(--light-accent);
+}
+
+ol, ul {
+    box-sizing: border-box;
+}
+
+.navbar-brand {
+    letter-spacing: 3px;
+    color: var(--dark-shades);
+}
+
+.navbar-brand:hover {
+    color: var(--light-accent);
+}
+
+.navbar-scroll .nav-link,
+.navbar-scroll .fa-bars {
+    color: var(--dark-accent);
+}
+
+.navbar-scrolled .nav-link,
+.navbar-scrolled .fa-bars {
+    color: #7f4722;
+}
+
+#hero {
+    height: 120vh;
+    background-size: cover;
+    background-image: url('assets/Musikverein 2019.jpg');
+}
+
+
+footer {
+    height: 30vh;
+    padding: 5vh;
+    color: var(--light-shades);
+    background-color: var(--dark-shades);
+}
+
+.icon-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    float: left;
+    width: auto;
+    height: auto;
+    margin-inline-end: 0;
+}
+
+.footer-sep {
+    clear: both;
+    display: block;
+    height: 1px;
+    font-size: 0;
+    line-height: 0;
+    width: 100%;
+    overflow: hidden;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    font-size: 12px;
+}
