@@ -4,6 +4,10 @@
     --light-shades: #DEECE4;
     --dark-accent: #97A8B4;
     --dark-shades: #262638;
+    --nav_typography-font-family: "Open Sans", Arial, Helvetica,sans-serif;
+    --nav_typography-font-weight: 700;
+    --nav_typography-font-size: 14px;
+    --nav_typography-letter-spacing: 1px;
 }
 
 nav {
@@ -12,7 +16,7 @@ nav {
 
 a {
     text-decoration: none;
-    color: var(--light-shades);
+    color: #ffffff;
 }
 
 a:hover {
@@ -34,12 +38,28 @@ ol, ul {
 
 .navbar-scroll .nav-link,
 .navbar-scroll .fa-bars {
-    color: var(--dark-accent);
+    color: #ffffff;
 }
 
 .navbar-scrolled .nav-link,
 .navbar-scrolled .fa-bars {
     color: #7f4722;
+}
+
+.navbar-nav .nav-item .nav-link .menu-text {
+    font-family: var(--nav_typography-font-family);
+    font-weight: var(--nav_typography-font-weight);
+    font-size: var(--nav_typography-font-size);
+    letter-spacing: var(--nav_typography-letter-spacing);
+
+    display: flex;
+    align-items: center;
+    line-height: 1;
+    justify-content: center;
+}
+
+.navbar-nav .nav-item .nav-link:hover {
+    color: var(--light-accent);
 }
 
 #hero {
