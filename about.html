@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Musikverein Oberkessach</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        @media (max-width: 767px) {
+            .carousel-inner .carousel-item > div {
+                display: none
+            }
+
+            .carousel-inner .carousel-item > div:first-child {
+                display: block
+            }
+        }
+
+        .carousel-inner .carousel-item.active, .carousel-inner .carousel-item-next, .carousel-inner .carousel-item-prev {
+            display: flex
+        }
+
+        @media (min-width: 768px) {
+            .carousel-inner .carousel-item-end.active, .carousel-inner .carousel-item-next {
+                transform: translateX(25%)
+            }
+
+            .carousel-inner .carousel-item-start.active, .carousel-inner .carousel-item-prev {
+                transform: translateX(-25%)
+            }
+        }
+
+        .carousel-inner .carousel-item-end, .carousel-inner .carousel-item-start {
+            transform: translateX(0)
+        }
+    </style>
+</head>
+<body>
+<header>
+    <!-- Navbar -->
+    <section>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+                <a class="navbar-brand" href="#"><img src="assets/Logo.png" width="240" height="80" alt=""/></a>
+                <button class="navbar-toggler ps-0" type="button" data-mdb-toggle="collapse"
+                        data-mdb-target="#navbarExample01"
+                        aria-controls="navbarExample01" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="d-flex justify-content-start align-items-center">
+                    <i class="fas fa-bars"></i>
+                </span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarExample01">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item active">
+                            <a class="nav-link px-3" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link px-3" href="events.html">Events</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link px-3" href="about.html">About us</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link px-3" href="gallery.html">Gallery</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link px-3" href="contact.html">Contact us</a>
+                        </li>
+                    </ul>
+
+                    <ul class="navbar-nav flex-row">
+                        <li class="nav-item">
+                            <a class="nav-link pe-3" href="#!">
+                                <i class="fab fa-youtube"></i>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link px-3" href="#!">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link ps-3" href="#!">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </section>
+
+    <!-- Heading Section -->
+    <section>
+        <div class="container">
+            <div class="p-5 mb-4 bg-light rounded-3">
+                <div class="container-fluid py-5">
+                    <h1 class="display-5 fw-bold">About Us</h1>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container">
+            <div class="p-4 p-md-5 mb-4 text-white rounded bg-dark">
+                <div class="col-md-6 px-0">
+                    <h1 class="display-4 fst-italic">About us</h1>
+                </div>
+            </div>
+        </div>
+    </section>
+</header>
+<main>
+    <!-- About-us-text Section -->
+    <section class="container mt-4">
+        <div class="row">
+            <div class="col-md-6">
+                <h2>Who we are</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec cursus eros ut sem vulputate, nec
+                    iaculis massa consectetur. Mauris convallis odio sit amet quam facilisis feugiat.</p>
+            </div>
+            <div class="col-md-6">
+                <div class="card-deck">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Membership</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Events</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Facilities</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Some-Images Section -->
+    <section id="images">
+        <div class="container text-center my-3">
+            <div class="row mx-auto my-auto justify-content-center">
+                <div class="lightbox">
+                    <div id="recipeCarousel" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner" role="listbox">
+                            <div class="carousel-item active">
+                                <div class="col-md-3">
+                                    <div class="card">
+                                        <div class="card-img">
+                                            <img src="//via.placeholder.com/500x400/31f?text=1" class="img-fluid"
+                                                 alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="col-md-3">
+                                    <div class="card">
+                                        <div class="card-img">
+                                            <img src="//via.placeholder.com/500x400/e66?text=2" class="img-fluid"
+                                                 alt="">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-3">
+                                    <div class="card">
+                                        <div class="card-img">
+                                            <img src="//via.placeholder.com/500x400/7d2?text=3" class="img-fluid"
+                                                 alt="">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-3">
+                                    <div class="card">
+                                        <div class="card-img">
+                                            <img src="//via.placeholder.com/500x400?text=4" class="img-fluid" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="col-md-3">
+                                    <div class="card">
+                                        <div class="card-img">
+                                            <img src="//via.placeholder.com/500x400/aba?text=5" class="img-fluid"
+                                                 alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="col-md-3">
+                                    <div class="card">
+                                        <div class="card-img">
+                                            <img src="//via.placeholder.com/500x400/fc0?text=6" class="img-fluid"
+                                                 alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev bg-transparent w-aut" href="#recipeCarousel" role="button"
+                           data-bs-slide="prev"> <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        </a>
+                        <a class="carousel-control-next bg-transparent w-aut" href="#recipeCarousel" role="button"
+                           data-bs-slide="next"> <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<!-- And the footer Section -->
+<footer>
+    <div class="container">
+        <div class="row align-items-top">
+            <div class="col">
+                <h4>Kontakt</h4>
+                <div class="text-area">
+                    <div class="footer-sep"></div>
+                    <div></div>
+                    <ul>
+                        <li>
+                            <span class="icon-wrapper"><i class="fa-solid fa-house"></i></span>
+                            <div><p>Merchinger Straße 10 <br>74214 Schöntal</p></div>
+                        </li>
+                        <li>
+                            <span class="icon-wrapper"><i class="fa-solid fa-envelope"></i></span>
+                            <div><a href="mailto:info@musikverein-oberkessach.de">info@musikverein-oberkessach.de</a>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="icon-wrapper"><i class="fab fa-youtube"></i></span>
+                            <div><a class="" href="#!">MVOberkessach</a></div>
+                        </li>
+                        <li>
+                            <span class="icon-wrapper"><i class="fab fa-facebook"></i></span>
+                            <div><a class="" href="#!">MVOberkessach</a></div>
+                        </li>
+                        <li>
+                            <span class="icon-wrapper"><i class="fab fa-instagram"></i></span>
+                            <div><a class="" href="#!">MVOberkessach</a></div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col">
+                <h4>Unterstützen</h4>
+                <div class="text-area">
+                    <div class="footer-sep"></div>
+                    <div></div>
+                    <ul>
+                        <li><a href="" class="c-link" target="_blank" rel="noopener">Spenden</a></li>
+                        <li><a href="">Unsere Sponsoren</a></li>
+                        <li><a href="">Mitglied werden</a></li>
+                        <li><a href="">Was ist Bildungsspender?</a></li>
+                        <li><a href="">Bildungsspender</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col">
+                <h4>Internes</h4>
+                <div class="text-area">
+                    <div class="footer-sep"></div>
+                    <div></div>
+                    <ul>
+                        <li><a href="">Konzertmeister</a></li>
+                        <li><a href="">E-Mail</a></li>
+                        <li><a href="">Sharepoint-Server</a></li>
+                        <li><a href="">MeinVerein</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col">
+                <h4>Rechtliches</h4>
+                <div class="text-area">
+                    <div class="footer-sep"></div>
+                    <div></div>
+                    <ul>
+                        <li><a href="">Impressum</a></li>
+                        <li><a href="">Datenschutzerklärung</a></li>
+                        <li><a href="">Einsatz von Cookies</a></li>
+                        <li><a href="">Disclaimer</a></li>
+                        <li><a href="">Fotohinweis</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script>
+    let items = document.querySelectorAll('.carousel .carousel-item')
+
+    items.forEach((el) => {
+        const minPerSlide = 4
+        let next = el.nextElementSibling
+        for (var i = 1; i < minPerSlide; i++) {
+            if (!next) {
+                // wrap carousel by using first child
+                next = items[0]
+            }
+            let cloneChild = next.cloneNode(true)
+            el.appendChild(cloneChild.children[0])
+            next = next.nextElementSibling
+        }
+    })
+</script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+</body>
+</html>
