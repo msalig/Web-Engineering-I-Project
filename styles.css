@@ -4,8 +4,106 @@
     --light-shades: #DEECE4;
     --dark-accent: #97A8B4;
     --dark-shades: #262638;
+    --nav_typography-font-family: "Open Sans", Arial, Helvetica,sans-serif;
+    --nav_typography-font-weight: 700;
+    --nav_typography-font-size: 14px;
+    --nav_typography-letter-spacing: 1px;
 }
 
 nav {
     background-color: var(--main-color);
+}
+
+a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+a:hover {
+    color: var(--light-accent);
+}
+
+ol, ul {
+    box-sizing: border-box;
+}
+
+.navbar-brand {
+    letter-spacing: 3px;
+    color: var(--dark-shades);
+}
+
+.navbar-brand:hover {
+    color: var(--light-accent);
+}
+
+.navbar-scroll .nav-link,
+.navbar-scroll .fa-bars {
+    color: #ffffff;
+}
+
+.navbar-scrolled .nav-link,
+.navbar-scrolled .fa-bars {
+    color: #7f4722;
+}
+
+.navbar-nav .nav-item .nav-link .menu-text {
+    font-family: var(--nav_typography-font-family);
+    font-weight: var(--nav_typography-font-weight);
+    font-size: var(--nav_typography-font-size);
+    letter-spacing: var(--nav_typography-letter-spacing);
+
+    display: flex;
+    align-items: center;
+    line-height: 1;
+    justify-content: center;
+}
+
+.navbar-nav .nav-item .nav-link:hover {
+    color: var(--light-accent);
+}
+
+#hero {
+    height: 120vh;
+    background-size: cover;
+    background-image: url('assets/Musikverein 2019.jpg');
+}
+
+main {
+    background-color: #DEECE4;
+}
+
+
+footer {
+    height: 30vh;
+    padding: 5vh;
+    color: var(--light-shades);
+    background-color: var(--dark-shades);
+}
+
+.icon-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    float: left;
+    width: auto;
+    height: auto;
+    margin-inline-end: 0;
+}
+
+.footer-sep {
+    clear: both;
+    display: block;
+    height: 1px;
+    font-size: 0;
+    line-height: 0;
+    width: 100%;
+    overflow: hidden;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    font-size: 12px;
 }
