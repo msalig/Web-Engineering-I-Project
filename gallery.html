@@ -1,5 +1,7 @@
 <!DOCTYPE html>
 <html>
+<link rel="stylesheet" href="navbarStyle.css"/>
+
 <style>
     * {
         box-sizing: border-box;
@@ -8,23 +10,20 @@
     body {
         margin: 0;
         font-family: Arial;
-
     }
 
-
-
-.btwHeader{
-    color: #fff;
-    text-align: center;
+.underHeader{
+    text-align:center;
+    font-size: 180px;
     font-family: cursive;
-    font-size: 50px;
-    background-color: #a81b1b;
-    color: #515f9a;
 }
 
-    .header {
+    .btwHeader {
+        color: #000000;
         text-align: center;
-        padding: 32px;
+        font-family: cursive;
+        font-size: 50px;
+        background-color: #a81b1b;
     }
 
     .row {
@@ -34,19 +33,19 @@
         flex-wrap: wrap;
         padding: 0 4px;
     }
-#row1{
-    background-color: #ce2b24;
-}
-#row2{
-    background-color: #a81b1b;
-    background-color: #912a2f;
-}
+
+    #row {
+        background-color: #fff;
+    }
+
+
     /* Create four equal columns that sits next to each other */
     .column {
         -ms-flex: 25%; /* IE10 */
         flex: 25%;
         max-width: 25%;
         padding: 0 4px;
+        background-color: rgba(178, 157, 57, 0.56);
     }
 
     .column img {
@@ -75,22 +74,51 @@
 </style>
 <body>
 
-<!-- Header -->
-<div class="header">
-    <h1>Responsive Image Grid</h1>
-    <p>Resize the browser window to see the responsive effect.</p>
-</div>
 
-<div class="btwHeader" id="row1">
-    Unterricht
+<nav class="navbar">
+    <!-- LOGO -->
+
+    <img class=imglogo src="./assets/Logo.png" alt="Harp">
+    <!--    <div class="logo">MUSIKVEREIN <br>OBERKESSACH e.V.</div>-->
+    <!-- NAVIGATION MENU -->
+    <ul class="nav-links">
+
+        <!-- USING CHECKBOX HACK -->
+        <input type="checkbox" id="checkbox_toggle"/>
+        <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+
+        <!-- NAVIGATION MENUS -->
+        <div class="menu">
+
+            <li><a href="/index.html">Home</a></li>
+            <li><a href="/gallery.html">Gallery</a></li>
+
+            <li class="services">
+                <a href="/">Services</a>
+
+                <!-- DROPDOWN MENU -->
+                <ul class="dropdown">
+                    <li><a href="/">Contact </a></li>
+                    <li><a href="/">About</a></li>
+                </ul>
+
+            </li>
+
+        </div>
+    </ul>
+</nav>
+
+<div class= underHeader>Gallerie </div>
+<div class="btwHeader" id="row">
+    Ausflug Weinprobe | 09.12.2022
 </div>
 
 <!-- Photo Grid -->
-<div class="row"id="row1">
+<div class="row" id="row">
     <div class="column">
         <img src="./assets/Bilder%20Musikverein/Ausflug%20ins%20Erzgeb.MVO%202009%20(10).JPG" style="width:100%">
         <img src="./assets/Bilder%20Musikverein/GV%202010%20001.jpg" style="width:100%">
-       <img src="./assets/Bilder%20Musikverein/GV%202010%20003.jpg" style="width:100%">
+        <img src="./assets/Bilder%20Musikverein/GV%202010%20003.jpg" style="width:100%">
 
     </div>
     <div class="column">
@@ -113,12 +141,12 @@
 
     </div>
 </div>
-<div class = btwHeader id="row2">
+<div class=btwHeader id="row">
     <br>
-    Staudammfest | 02.13.2018
+    Staudammfest | 05.02.2018
 
 </div>
-<div class="row" id="row2">
+<div class="row" id="row">
     <div class="column">
         <img src="./assets/Bilder%20Musikverein/Ausflug%20ins%20Erzgeb.MVO%202009%20(10).JPG" style="width:100%">
         <img src="./assets/Bilder%20Musikverein/GV%202010%20001.jpg" style="width:100%">
