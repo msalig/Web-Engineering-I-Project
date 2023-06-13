@@ -29,14 +29,14 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  <a href="https://github.com/msalig/Web-Engineering-I-Project">
-    <img src="assets/logo.png" alt="Logo" width="160" height="80">
+  <a href="https://mosbach.dhbw.de/">
+    <img src="https://moodle.mosbach.dhbw.de/pluginfile.php/1/theme_adaptable/logo/1676181944/DHBW-Logo.png" alt="Logo" width="423" height="88">
   </a>
 
   <h3 align="center">Web-Engineering-I-Project</h3>
 
   <p align="center">
-    An awesome README template to jumpstart your projects!
+    A project in the Web Engineering I course from the 2nd semester at DHBW Mosbach.
     <br />
     <a href="https://github.com/msalig/Web-Engineering-I-Project"><strong>Explore the docs »</strong></a>
     <br />
@@ -64,16 +64,11 @@
     <li>
       <a href="#getting-started">Getting Started</a>
       <ul>
-        <li><a href="#prerequisites">Prerequisites</a></li>
         <li><a href="#installation">Installation</a></li>
       </ul>
     </li>
     <li><a href="#usage">Usage</a></li>
-    <li><a href="#roadmap">Roadmap</a></li>
-    <li><a href="#contributing">Contributing</a></li>
     <li><a href="#license">License</a></li>
-    <li><a href="#contact">Contact</a></li>
-    <li><a href="#acknowledgments">Acknowledgments</a></li>
   </ol>
 </details>
 
@@ -84,17 +79,18 @@
 
 [![Product Name Screen Shot][product-screenshot]](https://example.com)
 
-In the Web Engineering I course, our objective is to develop a website using HTML, CSS, and JavaScript. This project is designed to evaluate web development skills and emphasizes the implementation of best practices, user experience, and responsive design principles. You will have the opportunity to showcase your knowledge in front-end technologies and create a website that demonstrates your understanding of modern web development techniques. Throughout the project, you will be expected to apply industry standards, adhere to coding conventions, and deliver a visually appealing and user-friendly website. This project will serve as a practical application of the concepts learned in the course and provide you with hands-on experience in building a complete website from scratch.
+The objective of this project was to develop a website of our choice
+using HTML, CSS, and JavaScript. The project aimed to assess our skills in web
+development and focused on implementing best practices, user experience, and
+responsive design principles.
 
-If you want to see the entire project description, take a look here: [Project Description](https://github.com/msalig/Web-Engineering-I-Project/blob/main/Project Description.pdf)
+If you want to see the entire project description, take a look here: [Project Description](./Project%20Description.pdf)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
 
 ### Built With
-
-This section should list any major frameworks/libraries used to bootstrap your project. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples.
 
 * [![Bootstrap][Bootstrap.com]][Bootstrap-url]
 
@@ -105,12 +101,9 @@ This section should list any major frameworks/libraries used to bootstrap your p
 <!-- GETTING STARTED -->
 ## Getting Started
 
-This is an example of how you may give instructions on setting up your project locally.
 To get a local copy up and running follow these simple example steps.
 
 ### Installation
-
-_Below is an example of how you can instruct your audience on installing and setting up your app. This template doesn't rely on any external dependencies or services._
 
 1. Clone the repo
    ```sh
@@ -134,7 +127,7 @@ _For more examples, please refer to the [Documentation](https://example.com)_
 <!-- LICENSE -->
 ## License
 
-Distributed under the MIT License. See `LICENSE` for more information.
+Distributed under the MIT License. See [LICENSE](./LICENSE) for more information.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
