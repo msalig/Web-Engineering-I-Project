@@ -11,18 +11,23 @@
 
 
 <!-- PROJECT SHIELDS -->
-<!--
-*** I'm using markdown "reference style" links for readability.
-*** Reference links are enclosed in brackets [ ] instead of parentheses ( ).
-*** See the bottom of this document for the declaration of the reference variables
-*** for contributors-url, forks-url, etc. This is an optional, concise syntax you may use.
-*** https://www.markdownguide.org/basic-syntax/#reference-style-links
--->
-[![Contributors][contributors-shield]][contributors-url]
-[![Forks][forks-shield]][forks-url]
-[![Stargazers][stars-shield]][stars-url]
-[![Issues][issues-shield]][issues-url]
-[![MIT License][license-shield]][license-url]
+<div align="center">
+  <a href="https://github.com/msalig/Web-Engineering-I-Project/graphs/contributors">
+    <img src="https://img.shields.io/github/contributors/msalig/Web-Engineering-I-Project.svg?style=for-the-badge" alt="Contributors">
+  </a>
+  <a href="https://github.com/msalig/Web-Engineering-I-Project/network/members">
+    <img src="https://img.shields.io/github/forks/msalig/Web-Engineering-I-Project.svg?style=for-the-badge" alt="Forks">
+  </a>
+  <a href="https://github.com/msalig/Web-Engineering-I-Project/stargazers">
+    <img src="https://img.shields.io/github/stars/msalig/Web-Engineering-I-Project.svg?style=for-the-badge" alt="Stargazers">
+  </a>
+    <a href="https://github.com/msalig/Web-Engineering-I-Project/issues">
+    <img src="https://img.shields.io/github/issues/msalig/Web-Engineering-I-Project.svg?style=for-the-badge" alt="Issues">
+  </a>
+    <a href="https://github.com/msalig/Web-Engineering-I-Project/blob/master/LICENSE">
+    <img src="https://img.shields.io/github/license/msalig/Web-Engineering-I-Project.svg?style=for-the-badge" alt="License">
+  </a>
+</div>
 
 
 
@@ -133,15 +138,5 @@ Distributed under the MIT License. See [LICENSE](./LICENSE) for more information
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[contributors-shield]: https://img.shields.io/github/contributors/msalig/Web-Engineering-I-Project.svg?style=for-the-badge
-[contributors-url]: https://github.com/msalig/Web-Engineering-I-Project/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/msalig/Web-Engineering-I-Project.svg?style=for-the-badge
-[forks-url]: https://github.com/msalig/Web-Engineering-I-Project/network/members
-[stars-shield]: https://img.shields.io/github/stars/msalig/Web-Engineering-I-Project.svg?style=for-the-badge
-[stars-url]: https://github.com/msalig/Web-Engineering-I-Project/stargazers
-[issues-shield]: https://img.shields.io/github/issues/msalig/Web-Engineering-I-Project.svg?style=for-the-badge
-[issues-url]: https://github.com/msalig/Web-Engineering-I-Project/issues
-[license-shield]: https://img.shields.io/github/license/msalig/Web-Engineering-I-Project.svg?style=for-the-badge
-[license-url]: https://github.com/msalig/Web-Engineering-I-Project/blob/master/LICENSE
 [Bootstrap.com]: https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white
 [Bootstrap-url]: https://getbootstrap.com
