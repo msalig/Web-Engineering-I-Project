@@ -1,0 +1,28 @@
+{
+  "events": [
+    {
+      "uuid": 1,
+      "title": "Sportfest Rosenberg",
+      "date": "18. Juni",
+      "time": "16:30 Uhr - 19:30 Uhr",
+      "address": "",
+      "description": ""
+    },
+    {
+      "uuid": 2,
+      "title": "Sportfest Rosenberg",
+      "date": "18. Juni",
+      "time": "16:30 Uhr - 19:30 Uhr",
+      "address": "",
+      "description": ""
+    },
+    {
+      "uuid": 3,
+      "title": "Sportfest Rosenberg",
+      "date": "18. Juni",
+      "time": "16:30 Uhr - 19:30 Uhr",
+      "address": "",
+      "description": ""
+    }
+  ]
+}

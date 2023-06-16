@@ -205,6 +205,28 @@ ul {
 
 /* ----- */
 
+/* Events */
+.eventDiv {
+    display: flex;
+    justify-content: left;
+}
+
+.dateDiv {
+    width: fit-content;
+    height: fit-content;
+    align-items: center;
+    padding: 3em;
+}
+
+.dateWeekday {
+
+}
+
+.date {
+
+}
+/* ----- */
+
 /* Footer */
 footer {
     height: fit-content;

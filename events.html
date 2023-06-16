@@ -14,7 +14,7 @@
 <body>
 <header>
     <!-- Navbar -->
-    <section id="navbar" class="fixed-top">
+    <section class="fixed-top" id="navbar">
         <nav class="navbar-container container">
             <a href="#"><img alt="" id="navbar-logo" src="assets/logo_klein.png"/></a>
             <button aria-controls="navbar-menu" aria-expanded="false" aria-label="Toggle menu" id="navbar-toggle"
@@ -77,13 +77,23 @@
     <section style="padding-top: 100px; overflow: auto">
         <div class="p-5 mb-4 bg-light rounded-3">
             <div class="container py-5">
-                <h1 class="display-5 fw-bold">About Us</h1>
+                <h1 class="display-5 fw-bold">Events</h1>
             </div>
         </div>
     </section>
 </header>
 <main>
+    <div class="container">
+        <div id="searchbar">
+            <input id="searchfield" name="searchfield" placeholder="search for event" type="search">
+            <i class="fa fa-search"></i>
+        </div>
+        <div id="event-list">
+            <ul id="data-list">
 
+            </ul>
+        </div>
+    </div>
 </main>
 <footer>
     <div class="container">
@@ -172,6 +182,119 @@
         <a class="text-reset fw-bold" href="https://github.com/msalig/">Marko Salig</a>
     </div>
 </footer>
+
+<script>
+    const data = {
+        "events": [
+            {
+                "uuid": 1,
+                "title": "Sportfest Rosenberg",
+                "date": "18. Juni",
+                "timestamp": 0,
+                "time": "16:30 Uhr - 19:30 Uhr",
+                "address": "",
+                "description": ""
+            },
+            {
+                "uuid": 2,
+                "title": "Sportfest Rosenberg",
+                "date": "18. Juni",
+                "timestamp": 1623865200,
+                "time": "16:30 Uhr - 19:30 Uhr",
+                "address": "",
+                "description": ""
+            },
+            {
+                "uuid": 3,
+                "title": "Sportfest Rosenberg",
+                "date": "18. Juni",
+                timestamp: 0,
+                "time": "16:30 Uhr - 19:30 Uhr",
+                "address": "",
+                "description": ""
+            }
+        ]
+    };
+
+    const weekdays = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+    const monthStrings = [
+        "January",
+        "February",
+        "March",
+        "April",
+        "May",
+        "June",
+        "July",
+        "August",
+        "September",
+        "October",
+        "November",
+        "December"
+    ];
+
+    async function fetchJsonData() {
+        try {
+            return data;
+            // TODO: Get rid of cors error
+            /*
+                return fetch(data, {
+                method: "GET",
+                mode: 'cors',
+                headers: {'Content-Type': 'application/json',}
+            }).then(response => response.json()); */
+        } catch (error) {
+            console.log('Error fetching JSON data:', error);
+        }
+    }
+
+    async function displayJsonData() {
+        const dataList = document.getElementById('data-list');
+        const jsonData = await fetchJsonData();
+
+        // Clear any existing data
+        dataList.innerHTML = '';
+
+        // Display each item in the JSON data
+        jsonData.events.sort((a, b) => a.timestamp - b.timestamp)
+        let previousEventDate = null;
+        jsonData.events.forEach(item => {
+            const date = new Date(item.timestamp * 1000);
+
+            const eventDiv = document.createElement('div');
+            eventDiv.setAttribute('class', 'eventDiv');
+
+            const dateDiv = document.createElement('div');
+            dateDiv.setAttribute('class', 'dateDiv');
+
+            const dateWeekday = document.createElement('h3');
+            dateWeekday.setAttribute('class', 'dateWeekday');
+            dateWeekday.textContent = weekdays[date.getDay()];
+
+            const dateParagraph = document.createElement('p');
+            dateParagraph.setAttribute('class', 'date');
+            dateParagraph.textContent = item.date;
+
+            dateDiv.appendChild(dateWeekday);
+            dateDiv.appendChild(dateParagraph);
+
+            eventDiv.appendChild(dateDiv);
+
+            const listItem = document.createElement('li');
+            if(previousEventDate == null || date > previousEventDate) {
+                const month = document.createElement('h2');
+                month.textContent = monthStrings[date.getMonth()];
+                listItem.appendChild(month);
+                listItem.appendChild(document.createElement('hr'));
+            }
+            listItem.appendChild(eventDiv);
+            dataList.appendChild(listItem);
+
+            previousEventDate = date;
+        });
+    }
+
+    displayJsonData();
+</script>
 
 <script src="script.js"></script>
 </body>
