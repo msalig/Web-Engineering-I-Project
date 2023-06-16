@@ -206,6 +206,68 @@ ul {
 /* ----- */
 
 /* Events */
+.events-container {
+    display: flex;
+    flex-direction: column;
+}
+
+#searchbar {
+    width: 100%;
+}
+
+.main-input {
+    height: 50px;
+    width: 80%;
+    color: #a7b1ab;
+    border: 1px solid #cccccc;
+    margin-bottom: 0;
+    -webkit-appearance: none;
+    border-radius: 4px 0 0 4px;
+    -moz-border-radius: 4px 0 0 4px;
+    -webkit-border-radius: 4px 0 0 4px;
+    display: inline-block;
+    text-align: left;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 0 0 0 57px;
+    border-right: 0;
+    background: #ffffff url("https://img.icons8.com/ios-filled/50/search--v1.png") 18px 15px no-repeat;
+    background-size: 18px 18px;
+    float: left;
+}
+
+#main-submit {
+    background: #00a221;
+    color: #fff;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 500;
+    text-align: center;
+    cursor: pointer;
+    margin-bottom: 0;
+    -webkit-appearance: none;
+    border-radius: 0 4px 4px 0;
+    -moz-border-radius: 0 4px 4px 0;
+    -webkit-border-radius: 0 4px 4px 0;
+    height: 50px;
+    width: 20%;
+    border: 0;
+    padding-top: 0;
+    float: left;
+}
+
+#main-submit:hover {
+    background: var(--main-color);
+    color: #fff !important;
+    -webkit-appearance: none;
+}
+
+#events {
+    width: 100%;
+    height: fit-content;
+    margin: 3em 0;
+}
+
 .eventDiv {
     display: flex;
     justify-content: left;
@@ -215,16 +277,32 @@ ul {
     width: fit-content;
     height: fit-content;
     align-items: center;
-    padding: 3em;
+    padding: 1.5em 3em;
 }
 
-.dateWeekday {
+.eventWeekday {
 
 }
 
 .date {
 
 }
+
+.eventTitleMessageDiv {
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    padding: 1.5em;
+}
+
+.eventTitle {
+
+}
+
+.eventDescription {
+
+}
+
 /* ----- */
 
 /* Footer */
@@ -238,7 +316,7 @@ footer {
     padding: 3em 0;
 }
 
-@media screen and (max-width: 768px){
+@media screen and (max-width: 768px) {
     .footer-section {
         padding: 1.5em 1.5em;
     }
