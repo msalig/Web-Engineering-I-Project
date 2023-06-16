@@ -4,14 +4,16 @@
     --light-shades: #DEECE4;
     --dark-accent: #97A8B4;
     --dark-shades: #262638;
-    --nav_typography-font-family: "Open Sans", Arial, Helvetica,sans-serif;
+    --nav_typography-font-family: "Open Sans", Arial, Helvetica, sans-serif;
     --nav_typography-font-weight: 700;
     --nav_typography-font-size: 14px;
     --nav_typography-letter-spacing: 1px;
-}
 
-nav {
-    background-color: var(--main-color);
+
+    --navbar-bg-color: hsl(0, 0%, 15%);
+    --navbar-text-color: hsl(0, 0%, 85%);
+    --navbar-text-color-focus: white;
+    --navbar-bg-contrast: hsl(0, 0%, 25%);
 }
 
 a {
@@ -27,45 +29,181 @@ ol, ul {
     box-sizing: border-box;
 }
 
-.navbar-brand {
-    letter-spacing: 3px;
-    color: var(--dark-shades);
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    font-size: 12px;
 }
 
-.navbar-brand:hover {
-    color: var(--light-accent);
+/* Navbar */
+#navbar {
+    --navbar-height: 100px;
+    position: fixed;
+    height: var(--navbar-height);
+    background-color: var(--main-color);
+    left: 0;
+    right: 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
 }
 
-.navbar-scroll .nav-link,
-.navbar-scroll .fa-bars {
-    color: #ffffff;
+.navbar-container {
+    display: flex;
+    justify-content: left;
+    height: 100%;
+    width: 100%;
+    align-items: center;
 }
 
-.navbar-scrolled .nav-link,
-.navbar-scrolled .fa-bars {
-    color: #7f4722;
+#navbar-logo {
+    max-width: 213px;
+    max-height: 80px;
+
+    margin-right: 1em;
 }
 
-.navbar-nav .nav-item .nav-link .menu-text {
+#navbar-toggle {
+    display: none;
+}
+
+#navbar-menu {
+    visibility: visible;
+    opacity: 1;
+    position: static;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.navbar-links {
+    list-style: none;
+    height: 100%;
+    white-space: nowrap;
+}
+
+.navbar-item {
+    display: inline;
+    margin: 1em;
+    width: 100%;
+}
+
+.navbar-links .navbar-item .navbar-link .menu-text {
     font-family: var(--nav_typography-font-family);
     font-weight: var(--nav_typography-font-weight);
     font-size: var(--nav_typography-font-size);
     letter-spacing: var(--nav_typography-letter-spacing);
-
-    display: flex;
-    align-items: center;
-    line-height: 1;
-    justify-content: center;
 }
 
-.navbar-nav .nav-item .nav-link:hover {
+.navbar-links .navbar-item .navbar-link:hover {
     color: var(--light-accent);
+}
+
+@media screen and (max-width: 768px) {
+    .navbar-container {
+        justify-content: space-between;
+    }
+
+    #navbar-toggle {
+        cursor: pointer;
+        border: none;
+        background-color: transparent;
+        width: 40px;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .icon-bar {
+        display: block;
+        width: 25px;
+        height: 4px;
+        margin: 2px;
+        background-color: var(--navbar-text-color);
+    }
+
+    #navbar-toggle:is(:focus, :hover) .icon-bar {
+        background-color: var(--navbar-text-color-focus);
+    }
+
+    #navbar-toggle[aria-expanded="true"] .icon-bar:is(:first-child, :last-child) {
+        position: absolute;
+        margin: 0;
+        width: 30px;
+    }
+
+    #navbar-toggle[aria-expanded="true"] .icon-bar:first-child {
+        transform: rotate(45deg);
+    }
+
+    #navbar-toggle[aria-expanded="true"] .icon-bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    #navbar-toggle[aria-expanded="true"] .icon-bar:last-child {
+        transform: rotate(-45deg);
+    }
+
+    #navbar-menu {
+        position: fixed;
+        top: var(--navbar-height);
+        bottom: 0;
+        opacity: 0;
+        visibility: hidden;
+        left: 0;
+        right: 0;
+    }
+
+    #navbar-social-media {
+        display: none;
+    }
+
+    .navbar-item {
+        display: block;
+    }
+
+    #navbar-toggle[aria-expanded="true"] + #navbar-menu {
+        background-color: rgba(0, 0, 0, 0.4);
+        opacity: 1;
+        visibility: visible;
+    }
+
+    #navbar-toggle[aria-expanded="true"] + #navbar-menu .navbar-links {
+        padding: 1em;
+        margin-left: auto;
+        margin-right: auto;
+        background-color: var(--dark-shades);
+        border-radius: 0 0 10px 10px;
+        width: 90%;
+        height: fit-content;
+    }
 }
 
 #hero {
     height: 120vh;
     background-size: cover;
+    background-position: center;
     background-image: url('assets/Musikverein 2019.jpg');
+}
+
+.wrap {
+    width: 100%;
+    height: auto;
+    margin: auto;
+    text-align: center;
+    position: relative;
+}
+
+.text_over_image {
+    position: absolute;
+    margin: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    color: #fff;
+    height: 100px;
 }
 
 footer {
@@ -94,11 +232,4 @@ footer {
     line-height: 0;
     width: 100%;
     overflow: hidden;
-}
-
-ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    font-size: 12px;
 }
