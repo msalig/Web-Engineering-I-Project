@@ -2,28 +2,28 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <title>Musikverein Oberkessach</title>
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
 
-    <link rel="stylesheet" href="styles.css">
+    <link href="./styles.css" rel="stylesheet">
 </head>
 <body>
 <header>
     <!-- Navbar -->
-    <section id="navbar" class="fixed-top">
+    <section id="navbar">
         <nav class="navbar-container container">
-            <a href="#"><img id="navbar-logo" src="assets/logo_klein.png" alt=""/></a>
-            <button type="button" id="navbar-toggle" aria-controls="navbar-menu" aria-label="Toggle menu"
-                    aria-expanded="false">
+            <a href="#"><img alt="" id="navbar-logo" src="assets/logo_klein.png"/></a>
+            <button aria-controls="navbar-menu" aria-expanded="false" aria-label="Toggle menu" id="navbar-toggle"
+                    type="button">
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <div  id="navbar-menu" aria-labelledby="navbar-toggle">
+            <div aria-labelledby="navbar-toggle" id="navbar-menu">
                 <ul class="navbar-links">
                     <li class="navbar-item">
                         <a class="navbar-link" href="/index.html">
@@ -31,28 +31,28 @@
                         </a>
                     </li>
                     <li class="navbar-item">
-                        <a class="navbar-link" href="/events.html">
+                        <a class="navbar-link" href="./events.html">
                             <span class="menu-text">Events</span>
                         </a>
                     </li>
                     <li class="navbar-item">
-                        <a class="navbar-link" href="/about.html">
+                        <a class="navbar-link" href="./about.html">
                             <span class="menu-text">About us</span>
                         </a>
                     </li>
                     <li class="navbar-item active">
-                        <a class="navbar-link" href="/gallery.html">
+                        <a class="navbar-link" href="./gallery.html">
                             <span class="menu-text">Gallery</span>
                         </a>
                     </li>
                     <li class="navbar-item">
-                        <a class="navbar-link" href="/contact.html">
+                        <a class="navbar-link" href="./contact.html">
                             <span class="menu-text">Contact us</span>
                         </a>
                     </li>
                 </ul>
 
-                <ul id="navbar-social-media" class="navbar-links">
+                <ul class="navbar-links" id="navbar-social-media">
                     <li class="navbar-item">
                         <a class="navbar-link" href="#!">
                             <i class="fab fa-youtube"></i>
@@ -93,9 +93,9 @@
         </div>
     </section>
 -->
-    <section>
+    <section style="padding-top: 100px; overflow: auto">
         <div class="wrap">
-            <img src="assets/Musikverein%202019.jpg" alt="Musikverein" style="object-fit: scale-down; max-width: 100%">
+            <img alt="Musikverein" src="assets/Musikverein%202019.jpg" style="object-fit: scale-down; max-width: 100%">
             <h1 class="text_over_image">Welcome to the Music Association Oberkessach</h1>
         </div>
     </section>
@@ -143,34 +143,34 @@
             <div class="row">
                 <div class="col">
                     <div class="card" style="width: 18rem;">
-                        <img src="..." class="card-img-top" alt="...">
+                        <img alt="..." class="card-img-top" src="...">
                         <div class="card-body">
                             <h5 class="card-title">Card title</h5>
                             <p class="card-text">Some quick example text to build on the card title and make up the bulk
                                 of the card's content.</p>
-                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                            <a class="btn btn-primary" href="#">Go somewhere</a>
                         </div>
                     </div>
                 </div>
                 <div class="col">
                     <div class="card" style="width: 18rem;">
-                        <img src="..." class="card-img-top" alt="...">
+                        <img alt="..." class="card-img-top" src="...">
                         <div class="card-body">
                             <h5 class="card-title">Card title</h5>
                             <p class="card-text">Some quick example text to build on the card title and make up the bulk
                                 of the card's content.</p>
-                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                            <a class="btn btn-primary" href="#">Go somewhere</a>
                         </div>
                     </div>
                 </div>
                 <div class="col">
                     <div class="card" style="width: 18rem;">
-                        <img src="..." class="card-img-top" alt="...">
+                        <img alt="..." class="card-img-top" src="...">
                         <div class="card-body">
                             <h5 class="card-title">Card title</h5>
                             <p class="card-text">Some quick example text to build on the card title and make up the bulk
                                 of the card's content.</p>
-                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                            <a class="btn btn-primary" href="#">Go somewhere</a>
                         </div>
                     </div>
                 </div>
@@ -206,7 +206,7 @@
                 </div>
 
                 <div class="col-md-4">
-                    <img src="assets/notes.jpg" width="150" height="100" alt="">
+                    <img alt="" height="100" src="assets/notes.jpg" width="150">
                 </div>
             </div>
         </section>
@@ -252,7 +252,7 @@
                     <div class="footer-sep"></div>
                     <div></div>
                     <ul>
-                        <li><a href="" class="c-link" target="_blank" rel="noopener">Spenden</a></li>
+                        <li><a class="c-link" href="" rel="noopener" target="_blank">Spenden</a></li>
                         <li><a href="">Unsere Sponsoren</a></li>
                         <li><a href="">Mitglied werden</a></li>
                         <li><a href="">Was ist Bildungsspender?</a></li>

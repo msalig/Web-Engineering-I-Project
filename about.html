@@ -2,14 +2,14 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <title>Musikverein Oberkessach</title>
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
 
-    <link rel="stylesheet" href="styles.css">
+    <link href="./styles.css" rel="stylesheet">
     <style>
         @media (max-width: 767px) {
             .carousel-inner .carousel-item > div {
@@ -43,69 +43,69 @@
 <body>
 <header>
     <!-- Navbar -->
-    <section id="navbar" class="fixed-top">
-            <nav class="navbar-container container">
-                <a href="#"><img id="navbar-logo" src="assets/logo_klein.png" alt=""/></a>
-                <button type="button" id="navbar-toggle" aria-controls="navbar-menu" aria-label="Toggle menu"
-                        aria-expanded="false">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <div  id="navbar-menu" aria-labelledby="navbar-toggle">
-                    <ul class="navbar-links">
-                        <li class="navbar-item">
-                            <a class="navbar-link" href="/index.html">
-                                <span class="menu-text">Home</span>
-                            </a>
-                        </li>
-                        <li class="navbar-item">
-                            <a class="navbar-link" href="/events.html">
-                                <span class="menu-text">Events</span>
-                            </a>
-                        </li>
-                        <li class="navbar-item">
-                            <a class="navbar-link" href="/about.html">
-                                <span class="menu-text">About us</span>
-                            </a>
-                        </li>
-                        <li class="navbar-item active">
-                            <a class="navbar-link" href="/gallery.html">
-                                <span class="menu-text">Gallery</span>
-                            </a>
-                        </li>
-                        <li class="navbar-item">
-                            <a class="navbar-link" href="/contact.html">
-                                <span class="menu-text">Contact us</span>
-                            </a>
-                        </li>
-                    </ul>
+    <section id="navbar">
+        <nav class="navbar-container container">
+            <a href="#"><img alt="" id="navbar-logo" src="assets/logo_klein.png"/></a>
+            <button aria-controls="navbar-menu" aria-expanded="false" aria-label="Toggle menu" id="navbar-toggle"
+                    type="button">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <div aria-labelledby="navbar-toggle" id="navbar-menu">
+                <ul class="navbar-links">
+                    <li class="navbar-item">
+                        <a class="navbar-link" href="/index.html">
+                            <span class="menu-text">Home</span>
+                        </a>
+                    </li>
+                    <li class="navbar-item">
+                        <a class="navbar-link" href="./events.html">
+                            <span class="menu-text">Events</span>
+                        </a>
+                    </li>
+                    <li class="navbar-item">
+                        <a class="navbar-link" href="./about.html">
+                            <span class="menu-text">About us</span>
+                        </a>
+                    </li>
+                    <li class="navbar-item active">
+                        <a class="navbar-link" href="./gallery.html">
+                            <span class="menu-text">Gallery</span>
+                        </a>
+                    </li>
+                    <li class="navbar-item">
+                        <a class="navbar-link" href="./contact.html">
+                            <span class="menu-text">Contact us</span>
+                        </a>
+                    </li>
+                </ul>
 
-                    <ul id="navbar-social-media" class="navbar-links">
-                        <li class="navbar-item">
-                            <a class="navbar-link" href="#!">
-                                <i class="fab fa-youtube"></i>
-                            </a>
-                        </li>
-                        <li class="navbar-item">
-                            <a class="navbar-link" href="#!">
-                                <i class="fab fa-facebook-f"></i>
-                            </a>
-                        </li>
-                        <li class="navbar-item">
-                            <a class="navbar-link" href="#!">
-                                <i class="fab fa-instagram"></i>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
-        </section>
+                <ul class="navbar-links" id="navbar-social-media">
+                    <li class="navbar-item">
+                        <a class="navbar-link" href="#!">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </li>
+                    <li class="navbar-item">
+                        <a class="navbar-link" href="#!">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                    </li>
+                    <li class="navbar-item">
+                        <a class="navbar-link" href="#!">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </section>
 
     <!-- Heading Section -->
-    <section>
+    <section style="padding-top: 100px; overflow: auto">
         <div class="p-5 mb-4 bg-light rounded-3">
-            <div class="container-fluid py-5">
+            <div class="container py-5">
                 <h1 class="display-5 fw-bold">About Us</h1>
             </div>
         </div>
@@ -150,14 +150,14 @@
         <div class="container text-center my-3">
             <div class="row mx-auto my-auto justify-content-center">
                 <div class="lightbox">
-                    <div id="recipeCarousel" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel slide" data-bs-ride="carousel" id="recipeCarousel">
                         <div class="carousel-inner" role="listbox">
                             <div class="carousel-item active">
                                 <div class="col-md-3">
                                     <div class="card">
                                         <div class="card-img">
-                                            <img src="//via.placeholder.com/500x400/31f?text=1" class="img-fluid"
-                                                 alt="">
+                                            <img alt="" class="img-fluid"
+                                                 src="//via.placeholder.com/500x400/31f?text=1">
                                         </div>
                                     </div>
                                 </div>
@@ -166,8 +166,8 @@
                                 <div class="col-md-3">
                                     <div class="card">
                                         <div class="card-img">
-                                            <img src="//via.placeholder.com/500x400/e66?text=2" class="img-fluid"
-                                                 alt="">
+                                            <img alt="" class="img-fluid"
+                                                 src="//via.placeholder.com/500x400/e66?text=2">
                                         </div>
                                     </div>
                                 </div>
@@ -175,8 +175,8 @@
                                 <div class="col-md-3">
                                     <div class="card">
                                         <div class="card-img">
-                                            <img src="//via.placeholder.com/500x400/7d2?text=3" class="img-fluid"
-                                                 alt="">
+                                            <img alt="" class="img-fluid"
+                                                 src="//via.placeholder.com/500x400/7d2?text=3">
                                         </div>
                                     </div>
                                 </div>
@@ -184,7 +184,7 @@
                                 <div class="col-md-3">
                                     <div class="card">
                                         <div class="card-img">
-                                            <img src="//via.placeholder.com/500x400?text=4" class="img-fluid" alt="">
+                                            <img alt="" class="img-fluid" src="//via.placeholder.com/500x400?text=4">
                                         </div>
                                     </div>
                                 </div>
@@ -193,8 +193,8 @@
                                 <div class="col-md-3">
                                     <div class="card">
                                         <div class="card-img">
-                                            <img src="//via.placeholder.com/500x400/aba?text=5" class="img-fluid"
-                                                 alt="">
+                                            <img alt="" class="img-fluid"
+                                                 src="//via.placeholder.com/500x400/aba?text=5">
                                         </div>
                                     </div>
                                 </div>
@@ -203,18 +203,20 @@
                                 <div class="col-md-3">
                                     <div class="card">
                                         <div class="card-img">
-                                            <img src="//via.placeholder.com/500x400/fc0?text=6" class="img-fluid"
-                                                 alt="">
+                                            <img alt="" class="img-fluid"
+                                                 src="//via.placeholder.com/500x400/fc0?text=6">
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <a class="carousel-control-prev bg-transparent w-aut" href="#recipeCarousel" role="button"
-                           data-bs-slide="prev"> <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <a class="carousel-control-prev bg-transparent w-aut" data-bs-slide="prev"
+                           href="#recipeCarousel"
+                           role="button"> <span aria-hidden="true" class="carousel-control-prev-icon"></span>
                         </a>
-                        <a class="carousel-control-next bg-transparent w-aut" href="#recipeCarousel" role="button"
-                           data-bs-slide="next"> <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <a class="carousel-control-next bg-transparent w-aut" data-bs-slide="next"
+                           href="#recipeCarousel"
+                           role="button"> <span aria-hidden="true" class="carousel-control-next-icon"></span>
                         </a>
                     </div>
                 </div>
@@ -263,7 +265,7 @@
                     <div class="footer-sep"></div>
                     <div></div>
                     <ul>
-                        <li><a href="" class="c-link" target="_blank" rel="noopener">Spenden</a></li>
+                        <li><a class="c-link" href="" rel="noopener" target="_blank">Spenden</a></li>
                         <li><a href="">Unsere Sponsoren</a></li>
                         <li><a href="">Mitglied werden</a></li>
                         <li><a href="">Was ist Bildungsspender?</a></li>
@@ -319,8 +321,8 @@
         }
     })
 </script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+<script crossorigin="anonymous"
         integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
-        crossorigin="anonymous"></script>
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
