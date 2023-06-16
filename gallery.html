@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-<link rel="stylesheet" href="navbarStyle.css"/>
+<link rel="stylesheet" href="styles.css">
 
 <style>
     * {
@@ -75,38 +75,65 @@
 <body>
 
 
-<nav class="navbar">
-    <!-- LOGO -->
+<!-- Navbar -->
+<section id="navbar" class="fixed-top">
+    <nav class="navbar-container container">
+        <a href="#"><img id="navbar-logo" src="assets/logo_klein.png" alt=""/></a>
+        <button type="button" id="navbar-toggle" aria-controls="navbar-menu" aria-label="Toggle menu"
+                aria-expanded="false">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+        <div  id="navbar-menu" aria-labelledby="navbar-toggle">
+            <ul class="navbar-links">
+                <li class="navbar-item">
+                    <a class="navbar-link" href="/index.html">
+                        <span class="menu-text">Home</span>
+                    </a>
+                </li>
+                <li class="navbar-item">
+                    <a class="navbar-link" href="/events.html">
+                        <span class="menu-text">Events</span>
+                    </a>
+                </li>
+                <li class="navbar-item">
+                    <a class="navbar-link" href="/about.html">
+                        <span class="menu-text">About us</span>
+                    </a>
+                </li>
+                <li class="navbar-item active">
+                    <a class="navbar-link" href="/gallery.html">
+                        <span class="menu-text">Gallery</span>
+                    </a>
+                </li>
+                <li class="navbar-item">
+                    <a class="navbar-link" href="/contact.html">
+                        <span class="menu-text">Contact us</span>
+                    </a>
+                </li>
+            </ul>
 
-    <img class=imglogo src="./assets/Logo.png" alt="Harp">
-    <!--    <div class="logo">MUSIKVEREIN <br>OBERKESSACH e.V.</div>-->
-    <!-- NAVIGATION MENU -->
-    <ul class="nav-links">
-
-        <!-- USING CHECKBOX HACK -->
-        <input type="checkbox" id="checkbox_toggle"/>
-        <label for="checkbox_toggle" class="hamburger">&#9776;</label>
-
-        <!-- NAVIGATION MENUS -->
-        <div class="menu">
-
-            <li><a href="/index.html">Home</a></li>
-            <li><a href="/gallery.html">Gallery</a></li>
-
-            <li class="services">
-                <a href="/">Services</a>
-
-                <!-- DROPDOWN MENU -->
-                <ul class="dropdown">
-                    <li><a href="/">Contact </a></li>
-                    <li><a href="/">About</a></li>
-                </ul>
-
-            </li>
-
+            <ul id="navbar-social-media" class="navbar-links">
+                <li class="navbar-item">
+                    <a class="navbar-link" href="#!">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                </li>
+                <li class="navbar-item">
+                    <a class="navbar-link" href="#!">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                </li>
+                <li class="navbar-item">
+                    <a class="navbar-link" href="#!">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </li>
+            </ul>
         </div>
-    </ul>
-</nav>
+    </nav>
+</section>
 
 <div class= underHeader>Gallerie </div>
 <div class="btwHeader" id="row">

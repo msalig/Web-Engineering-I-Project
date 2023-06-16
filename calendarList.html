@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Kalenderliste</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f2f2f2;
+        }
+
+        section {
+            display: -webkit-flex;
+            display: flex;
+        }
+
+        .calendar {
+            max-width: 1300px;
+            margin: 0 auto;
+            background-color: #fff;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            border-radius: 4px;
+        }
+
+        .calendar-header {
+            background-color: #770e09;
+            color: #ffe477;
+            padding: 20px;
+            text-align: center;
+            border-radius: 4px 4px 0 0;
+        }
+
+        .calendar-header h1 {
+            margin: 0;
+            font-size: 24px;
+            font-weight: normal;
+        }
+
+        .calendar-body {
+            padding: 20px;
+        }
+
+        .calendar-list {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .calendar-list-item {
+            margin-bottom: 10px;
+            padding: 10px;
+            background-color: #f9f9f9;
+            border-radius: 4px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .calendar-list-item .date {
+            font-weight: bold;
+            font-size: 16px;
+            color: #000000;
+        }
+
+        .calendar-list-item .event {
+            margin-top: 5px;
+            font-size: 14px;
+            color: #555;
+        }
+    </style>
+</head>
+
+
+<body>
+
+
+<!-- Navbar -->
+<section id="navbar" class="fixed-top">
+    <nav class="navbar-container container">
+        <a href="#"><img id="navbar-logo" src="assets/logo_klein.png" alt=""/></a>
+        <button type="button" id="navbar-toggle" aria-controls="navbar-menu" aria-label="Toggle menu"
+                aria-expanded="false">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+        <div  id="navbar-menu" aria-labelledby="navbar-toggle">
+            <ul class="navbar-links">
+                <li class="navbar-item">
+                    <a class="navbar-link" href="/index.html">
+                        <span class="menu-text">Home</span>
+                    </a>
+                </li>
+                <li class="navbar-item">
+                    <a class="navbar-link" href="/events.html">
+                        <span class="menu-text">Events</span>
+                    </a>
+                </li>
+                <li class="navbar-item">
+                    <a class="navbar-link" href="/about.html">
+                        <span class="menu-text">About us</span>
+                    </a>
+                </li>
+                <li class="navbar-item active">
+                    <a class="navbar-link" href="/gallery.html">
+                        <span class="menu-text">Gallery</span>
+                    </a>
+                </li>
+                <li class="navbar-item">
+                    <a class="navbar-link" href="/contact.html">
+                        <span class="menu-text">Contact us</span>
+                    </a>
+                </li>
+            </ul>
+
+            <ul id="navbar-social-media" class="navbar-links">
+                <li class="navbar-item">
+                    <a class="navbar-link" href="#!">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                </li>
+                <li class="navbar-item">
+                    <a class="navbar-link" href="#!">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                </li>
+                <li class="navbar-item">
+                    <a class="navbar-link" href="#!">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</section>
+
+
+
+
+
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
+
+<div class="calendar">
+    <div class="calendar-header">
+        <h1>Next Events</h1>
+    </div>
+    <div class="calendar-body">
+        <ul class="calendar-list" id="calendarList"></ul>
+    </div>
+</div>
+
+<script>
+    var xhr = new XMLHttpRequest();
+    xhr.open('GET', 'calendar.json', true);
+    xhr.onreadystatechange = function () {
+        if (xhr.readyState === 4 && xhr.status === 200) {
+            var events = JSON.parse(xhr.responseText);
+            var calendarList = document.getElementById('calendarList');
+            events.forEach(function (event) {
+                var listItem = document.createElement('li');
+                listItem.className = 'calendar-list-item';
+
+                var dateSpan = document.createElement('span');
+                dateSpan.className = 'date';
+                dateSpan.textContent = event.date;
+
+                var eventDiv = document.createElement('div');
+                eventDiv.className = 'event';
+                eventDiv.textContent = event.event;
+
+                listItem.appendChild(dateSpan);
+                listItem.appendChild(eventDiv);
+
+                calendarList.appendChild(listItem);
+            });
+        }
+    };
+    xhr.send();
+</script>
+
+
+</body>
+</html>
