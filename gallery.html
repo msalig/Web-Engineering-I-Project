@@ -84,7 +84,7 @@
 <body>
 <header>
     <!-- Navbar -->
-    <section id="navbar">
+    <section id="navbar" class="fixed-top">
         <nav class="navbar-container container">
             <a href="#"><img alt="" id="navbar-logo" src="assets/logo_klein.png"/></a>
             <button aria-controls="navbar-menu" aria-expanded="false" aria-label="Toggle menu" id="navbar-toggle"
@@ -96,7 +96,7 @@
             <div aria-labelledby="navbar-toggle" id="navbar-menu">
                 <ul class="navbar-links">
                     <li class="navbar-item">
-                        <a class="navbar-link" href="/index.html">
+                        <a class="navbar-link" href="./index.html">
                             <span class="menu-text">Home</span>
                         </a>
                     </li>
@@ -231,79 +231,91 @@
 <footer>
     <div class="container">
         <div class="row align-items-top">
-            <div class="col">
+
+            <!-- Section Social Media -->
+            <section class="col footer-section">
                 <h4>Kontakt</h4>
                 <div class="text-area">
                     <div class="footer-sep"></div>
-                    <div></div>
                     <ul>
-                        <li>
-                            <span class="icon-wrapper"><i class="fa-solid fa-house"></i></span>
-                            <div><p>Merchinger Straße 10 <br>74214 Schöntal</p></div>
+                        <li class="footer-social-media-link">
+                            <span class="footer-icon-wrapper"><i class="fa-solid fa-house"></i></span>
+                            <div><span>Merchinger Straße 10, 74214 Schöntal</span></div>
                         </li>
-                        <li>
-                            <span class="icon-wrapper"><i class="fa-solid fa-envelope"></i></span>
+                        <li class="footer-social-media-link">
+                            <span class="footer-icon-wrapper"><i class="fa-solid fa-envelope"></i></span>
                             <div><a href="mailto:info@musikverein-oberkessach.de">info@musikverein-oberkessach.de</a>
                             </div>
                         </li>
-                        <li>
-                            <span class="icon-wrapper"><i class="fab fa-youtube"></i></span>
-                            <div><a class="" href="#!">MVOberkessach</a></div>
+                        <li class="footer-social-media-link">
+                            <span class="footer-icon-wrapper"><i class="fab fa-youtube"></i></span>
+                            <div><a class="" href="#!">MV-Oberkessach</a></div>
                         </li>
-                        <li>
-                            <span class="icon-wrapper"><i class="fab fa-facebook"></i></span>
-                            <div><a class="" href="#!">MVOberkessach</a></div>
+                        <li class="footer-social-media-link">
+                            <span class="footer-icon-wrapper"><i class="fab fa-facebook"></i></span>
+                            <div><a class="" href="#!">MV-Oberkessach</a></div>
                         </li>
-                        <li>
-                            <span class="icon-wrapper"><i class="fab fa-instagram"></i></span>
-                            <div><a class="" href="#!">MVOberkessach</a></div>
+                        <li class="footer-social-media-link">
+                            <span class="footer-icon-wrapper"><i class="fab fa-instagram"></i></span>
+                            <div><a class="" href="#!">MV-Oberkessach</a></div>
                         </li>
                     </ul>
                 </div>
-            </div>
-            <div class="col">
+            </section>
+
+            <!-- Section Support -->
+            <section class="col footer-section">
                 <h4>Unterstützen</h4>
                 <div class="text-area">
                     <div class="footer-sep"></div>
-                    <div></div>
                     <ul>
-                        <li><a class="c-link" href="" rel="noopener" target="_blank">Spenden</a></li>
-                        <li><a href="">Unsere Sponsoren</a></li>
-                        <li><a href="">Mitglied werden</a></li>
-                        <li><a href="">Was ist Bildungsspender?</a></li>
-                        <li><a href="">Bildungsspender</a></li>
+                        <li><a href="" target="_blank">Spenden</a></li>
+                        <li><a href="" target="_blank">Unsere Sponsoren</a></li>
+                        <li><a href="" target="_blank">Mitglied werden</a></li>
+                        <li><a href="" target="_blank">Was ist Bildungsspender?</a></li>
+                        <li><a href="" target="_blank">Bildungsspender</a></li>
                     </ul>
                 </div>
-            </div>
-            <div class="col">
+            </section>
+
+            <!-- Section Intern Stuff -->
+            <section class="col footer-section">
                 <h4>Internes</h4>
                 <div class="text-area">
                     <div class="footer-sep"></div>
-                    <div></div>
                     <ul>
-                        <li><a href="">Konzertmeister</a></li>
-                        <li><a href="">E-Mail</a></li>
-                        <li><a href="">Sharepoint-Server</a></li>
-                        <li><a href="">MeinVerein</a></li>
+                        <li><a href="" target="_blank">Konzertmeister</a></li>
+                        <li><a href="" target="_blank">E-Mail</a></li>
+                        <li><a href="" target="_blank">Sharepoint-Server</a></li>
+                        <li><a href="" target="_blank">MeinVerein</a></li>
                     </ul>
                 </div>
-            </div>
-            <div class="col">
+            </section>
+
+            <!-- Section Legal -->
+            <section class="col footer-section">
                 <h4>Rechtliches</h4>
                 <div class="text-area">
                     <div class="footer-sep"></div>
-                    <div></div>
                     <ul>
-                        <li><a href="">Impressum</a></li>
-                        <li><a href="">Datenschutzerklärung</a></li>
-                        <li><a href="">Einsatz von Cookies</a></li>
-                        <li><a href="">Disclaimer</a></li>
-                        <li><a href="">Fotohinweis</a></li>
+                        <li><a href="" target="_blank">Impressum</a></li>
+                        <li><a href="" target="_blank">Datenschutzerklärung</a></li>
+                        <li><a href="" target="_blank">Einsatz von Cookies</a></li>
+                        <li><a href="" target="_blank">Disclaimer</a></li>
+                        <li><a href="" target="_blank">Fotohinweis</a></li>
                     </ul>
                 </div>
-            </div>
+            </section>
         </div>
     </div>
+
+    <!-- Copyright -->
+    <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+        © 2023 Copyright:
+        <a class="text-reset fw-bold" href="https://github.com/msalig/">Marko Salig</a>
+    </div>
 </footer>
+
+<script src="script.js"></script>
 </body>
 </html>

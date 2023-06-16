@@ -39,11 +39,8 @@ ul {
 /* Navbar */
 #navbar {
     --navbar-height: 100px;
-    position: fixed;
     height: var(--navbar-height);
     background-color: var(--main-color);
-    left: 0;
-    right: 0;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
 }
 
@@ -177,6 +174,9 @@ ul {
     }
 }
 
+/* ----- */
+
+/* index.html Hero Section */
 #hero {
     height: 120vh;
     background-size: cover;
@@ -203,30 +203,48 @@ ul {
     height: 100px;
 }
 
+/* ----- */
+
+/* Footer */
 footer {
-    height: 30vh;
-    padding: 5vh;
+    height: fit-content;
     color: var(--light-shades);
     background-color: var(--dark-shades);
 }
 
-.icon-wrapper {
+.footer-section {
+    padding: 3em 0;
+}
+
+@media screen and (max-width: 768px){
+    .footer-section {
+        padding: 1.5em 1.5em;
+    }
+}
+
+.footer-social-media-link {
+    align-items: center;
+    display: flex;
+    justify-content: start
+}
+
+.footer-icon-wrapper {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-shrink: 0;
     float: left;
-    width: auto;
-    height: auto;
-    margin-inline-end: 0;
+    width: 20px;
+    height: 20px;
+    margin-inline-end: 10px;
 }
 
 .footer-sep {
-    clear: both;
-    display: block;
-    height: 1px;
-    font-size: 0;
-    line-height: 0;
+    border-top: 2px solid var(--light-accent);
+    margin-top: 0;
+    margin-bottom: 30px;
     width: 100%;
-    overflow: hidden;
+    max-width: 40px;
 }
+
+/* ----- */
