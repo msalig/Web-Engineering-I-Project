@@ -228,6 +228,7 @@ ul {
     margin: 3em 0;
     width: 100%;
 }
+
 /* ----- */
 
 /* Events.html */
@@ -326,6 +327,45 @@ ul {
 
 .eventDescription {
 
+}
+
+/* ----- */
+
+/* Contact.html */
+.contact-row {
+    padding: 3em 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#contact-form {
+    display: inline;
+    width: 70%;
+}
+
+#contact-information {
+    display: inline;
+    width: fit-content;
+    height: fit-content;
+    box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2), 0 4px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 2em;
+}
+
+.form-label {
+    margin: 1em 0 0.5em 0;
+}
+
+.form-submit-button {
+    --bs-btn-padding-y: 0.5rem;
+    --bs-btn-padding-x: 1rem;
+    --bs-btn-font-size: 1.25rem;
+
+    background-color: var(--main-color); !important;
+}
+
+.form-submit-button:hover {
+    background-color: var(--light-accent); !important;
 }
 
 /* ----- */
