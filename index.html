@@ -94,17 +94,17 @@
         </div>
     </section>
 -->
-    <section style="padding-top: 100px; overflow: auto">
+    <section id="hero-overlay">
         <div class="wrap">
             <img alt="Musikverein" src="assets/Musikverein%202019.jpg" style="object-fit: scale-down; max-width: 100%">
-            <h1 class="text_over_image">Welcome to the Music Association Oberkessach</h1>
+            <h1 class="text-over-image">Welcome to the Music Association Oberkessach</h1>
         </div>
     </section>
 </header>
 
 <main id="main">
     <div class="container">
-        <section>
+        <section id="introduction">
             <div class="row justify-content-evenly">
                 <div class="col align-self-center">
                     <h2>Nice that you came by</h2>
@@ -138,42 +138,31 @@
 
         <hr>
 
-        <section id="current_news">
+        <section id="current-news">
             <h2>Current news</h2>
-            <h4>Current pictures and reports of activities by the Music Association Oberkessach e.V.</h4>
-            <div class="row">
-                <div class="col">
-                    <div class="card" style="width: 18rem;">
-                        <img alt="..." class="card-img-top" src="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                                of the card's content.</p>
-                            <a class="btn btn-primary" href="#">Go somewhere</a>
-                        </div>
-                    </div>
+            <h5 style="text-align: center">Current pictures and reports of activities by the Music Association Oberkessach e.V.</h5>
+
+            <div class="index-news-card-deck">
+                <div class="index-news-card">
+                    <img class="img-fluid index-news-img" src="assets/Bilder%20Musikverein/Ausflug%20ins%20Erzgeb.MVO%202009%20(10).JPG" alt="">
+
+                    <h5 class="index-news-title">Test</h5>
+                    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>
+                    <button class="btn btn-primary btn-md">More</button>
                 </div>
-                <div class="col">
-                    <div class="card" style="width: 18rem;">
-                        <img alt="..." class="card-img-top" src="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                                of the card's content.</p>
-                            <a class="btn btn-primary" href="#">Go somewhere</a>
-                        </div>
-                    </div>
+                <div class="index-news-card">
+                    <img class="img-fluid index-news-img" src="assets/Bilder%20Musikverein/Ausflug%20ins%20Erzgeb.MVO%202009%20(10).JPG" alt="">
+
+                    <h5 class="index-news-title">Test</h5>
+                    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>
+                    <button class="btn btn-primary btn-md">More</button>
                 </div>
-                <div class="col">
-                    <div class="card" style="width: 18rem;">
-                        <img alt="..." class="card-img-top" src="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                                of the card's content.</p>
-                            <a class="btn btn-primary" href="#">Go somewhere</a>
-                        </div>
-                    </div>
+                <div class="index-news-card">
+                    <img class="img-fluid index-news-img" src="assets/Bilder%20Musikverein/Ausflug%20ins%20Erzgeb.MVO%202009%20(10).JPG" alt="">
+
+                    <h5 class="index-news-title">Test</h5>
+                    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>
+                    <button class="btn btn-primary btn-md">More</button>
                 </div>
             </div>
         </section>
@@ -182,7 +171,7 @@
 
         <section id="#wanna-join">
             <div class="row">
-                <div class="col-md-8">
+                <div id="wanna-join-text">
                     <h2>Wanna join</h2>
                     <h5>...then you are warmly welcome to join us!</h5>
                     <p>
@@ -206,8 +195,8 @@
                     </p>
                 </div>
 
-                <div class="col-md-4">
-                    <img alt="" height="100" src="assets/notes.jpg" width="150">
+                <div id="wanna-join-img">
+                    <img class="img-fluid" alt="" src="assets/notes.jpg">
                 </div>
             </div>
         </section>

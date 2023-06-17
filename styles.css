@@ -176,7 +176,7 @@ ul {
 
 /* ----- */
 
-/* index.html Hero Section */
+/* index.html */
 #hero {
     height: 120vh;
     background-size: cover;
@@ -192,7 +192,7 @@ ul {
     position: relative;
 }
 
-.text_over_image {
+.text-over-image {
     position: absolute;
     margin: auto;
     top: 0;
@@ -202,6 +202,70 @@ ul {
     color: #fff;
     height: 100px;
 }
+
+#introduction {
+    margin: 3em 0;
+}
+
+#current-news {
+    margin: 3em 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.index-news-card-deck {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 2em 1em;
+}
+
+.index-news-card {
+    flex: 1 0 0;
+    width: fit-content;
+    min-width: 250px;
+    height: fit-content;
+    box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2), 0 4px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 2em;
+    margin: 1em;
+}
+
+.index-news-title {
+    margin: 0.5em 0;
+}
+
+.index-news-img {
+    box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.19);
+}
+
+#wanna-join-text {
+    width: 70%;
+}
+
+#wanna-join-img {
+    width: 28%;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+@media screen and (max-width: 768px) {
+    #hero-overlay {
+        padding-top: 100px;
+        overflow: auto
+    }
+
+    #wanna-join-text {
+        width: 100%;
+    }
+
+    #wanna-join-img {
+        display: none;
+    }
+}
+
 
 /* ----- */
 
@@ -361,11 +425,13 @@ ul {
     --bs-btn-padding-x: 1rem;
     --bs-btn-font-size: 1.25rem;
 
-    background-color: var(--main-color); !important;
+    background-color: var(--main-color);
+!important;
 }
 
 .form-submit-button:hover {
-    background-color: var(--light-accent); !important;
+    background-color: var(--light-accent);
+!important;
 }
 
 /* ----- */
