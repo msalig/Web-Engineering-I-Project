@@ -1,5 +1,5 @@
 const data = {
-    "events": [
+    events: [
         {
             uuid: 1,
             title: "Dorffest Westerhausen",
@@ -51,7 +51,7 @@ async function fetchJsonData() {
         return data;
         //TODO: Get rid of cors error
         /*
-            return fetch(data, {
+            return fetch(events.json, {
             method: "GET",
             mode: 'cors',
             headers: {'Content-Type': 'application/json',}
@@ -61,7 +61,7 @@ async function fetchJsonData() {
     }
 }
 
-async function displayJsonData() {
+async function displayEvents() {
     const dataList = document.getElementById('data-list');
     const jsonData = await fetchJsonData();
 
@@ -70,6 +70,7 @@ async function displayJsonData() {
 
     // Sort the events after time and display them
     let previousEventDate = null;
+
     jsonData.events.sort((a, b) => a.timestamp - b.timestamp)
     jsonData.events.forEach(event => {
         const date = new Date(event.timestamp * 1000);
@@ -118,4 +119,6 @@ async function displayJsonData() {
     });
 }
 
-displayJsonData();
+(async () => {
+    await displayEvents();
+})();

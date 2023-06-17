@@ -89,7 +89,7 @@ using HTML, CSS, and JavaScript. The project aimed to assess our skills in web
 development and focused on implementing best practices, user experience, and
 responsive design principles.
 
-If you want to see the entire project description, take a look here: [Project Description](./Project%20Description.pdf)
+If you want to see the entire project description, take a look here: [Project Description](Project Description.pdf)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -132,7 +132,7 @@ _For more examples, please refer to the [Documentation](https://example.com)_
 <!-- LICENSE -->
 ## License
 
-Distributed under the MIT License. See [LICENSE](./LICENSE) for more information.
+Distributed under the MIT License. See [LICENSE](LICENSE) for more information.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

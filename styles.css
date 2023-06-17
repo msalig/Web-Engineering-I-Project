@@ -38,6 +38,7 @@ ul {
 
 /* Navbar */
 #navbar {
+    z-index: 1;
     --navbar-height: 100px;
     height: var(--navbar-height);
     background-color: var(--main-color);
@@ -181,7 +182,7 @@ ul {
     height: 120vh;
     background-size: cover;
     background-position: center;
-    background-image: url('assets/Musikverein 2019.jpg');
+    background-image: url('Musikverein 2019.jpg');
 }
 
 .wrap {
@@ -393,6 +394,74 @@ ul {
 
 }
 
+/* ----- */
+
+/* Gallery.html */
+#gallery-container {
+    padding-bottom: 1.5em;
+}
+
+#lightbox {
+    z-index: 2;
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+}
+
+#lightbox-image {
+    max-width: 90%;
+    max-height: 90%;
+}
+
+#lightbox-close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.gallery-event-title {
+    margin: 1em 0 0 0;
+    width: fit-content;
+}
+
+.gallery-event-title-row {
+    margin: 0 0.5rem;
+}
+
+.gallery-event-title-row:after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 1em;
+    margin-bottom: 2em;
+    border-bottom: 1px solid var(--dark-shades);
+}
+
+.gallery-show-more-row {
+    display: flex;
+    justify-content: end;
+}
+
+.gallery-show-more-button {
+    width: fit-content;
+    background-color: var(--dark-accent);
+    margin-right: .75rem;
+}
+
+.gallery-show-more-button:hover {
+    background-color: var(--light-accent);
+}
 /* ----- */
 
 /* Contact.html */

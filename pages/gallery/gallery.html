@@ -8,85 +8,13 @@
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
 
-<link href="./styles.css" rel="stylesheet">
-<link href="./navbarStyle.css" rel="stylesheet"/>
-
-<style>
-    * {
-        box-sizing: border-box;
-    }
-
-    body {
-        margin: 0;
-        font-family: Arial, sans-serif;
-    }
-
-    .underHeader {
-        text-align: center;
-        font-size: 180px;
-        font-family: cursive;
-    }
-
-    .btwHeader {
-        color: #000000;
-        text-align: center;
-        font-family: cursive;
-        font-size: 50px;
-        background-color: #a81b1b;
-    }
-
-    .row {
-        display: -ms-flexbox; /* IE10 */
-        display: flex;
-        -ms-flex-wrap: wrap; /* IE10 */
-        flex-wrap: wrap;
-        padding: 0 4px;
-    }
-
-    #row {
-        background-color: #fff;
-    }
-
-
-    /* Create four equal columns that sits next to each other */
-    .column {
-        -ms-flex: 25%; /* IE10 */
-        flex: 25%;
-        max-width: 25%;
-        padding: 0 4px;
-        background-color: rgba(178, 157, 57, 0.56);
-    }
-
-    .column img {
-        margin-top: 8px;
-        vertical-align: middle;
-        width: 100%;
-    }
-
-    /* Responsive layout - makes a two column-layout instead of four columns */
-    @media screen and (max-width: 800px) {
-        .column {
-            -ms-flex: 50%;
-            flex: 50%;
-            max-width: 50%;
-        }
-    }
-
-    /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-    @media screen and (max-width: 600px) {
-        .column {
-            -ms-flex: 100%;
-            flex: 100%;
-            max-width: 100%;
-        }
-    }
-</style>
+<link href="../../styles.css" rel="stylesheet">
 <body>
 <header>
     <!-- Navbar -->
-    <section id="navbar" class="fixed-top">
+    <section class="fixed-top" id="navbar">
         <nav class="navbar-container container">
-            <a href="#"><img alt="" id="navbar-logo" src="assets/logo_klein.png"/></a>
+            <a href="#"><img alt="" id="navbar-logo" src="../../assets/logo_klein.png"/></a>
             <button aria-controls="navbar-menu" aria-expanded="false" aria-label="Toggle menu" id="navbar-toggle"
                     type="button">
                 <span class="icon-bar"></span>
@@ -96,17 +24,17 @@
             <div aria-labelledby="navbar-toggle" id="navbar-menu">
                 <ul class="navbar-links">
                     <li class="navbar-item">
-                        <a class="navbar-link" href="./index.html">
+                        <a class="navbar-link" href="../../index.html">
                             <span class="menu-text">Home</span>
                         </a>
                     </li>
                     <li class="navbar-item">
-                        <a class="navbar-link" href="./events.html">
+                        <a class="navbar-link" href="../events/events.html">
                             <span class="menu-text">Events</span>
                         </a>
                     </li>
                     <li class="navbar-item">
-                        <a class="navbar-link" href="./about.html">
+                        <a class="navbar-link" href="../about/about.html">
                             <span class="menu-text">About us</span>
                         </a>
                     </li>
@@ -116,7 +44,7 @@
                         </a>
                     </li>
                     <li class="navbar-item">
-                        <a class="navbar-link" href="./contact.html">
+                        <a class="navbar-link" href="../contact/contact.html">
                             <span class="menu-text">Contact us</span>
                         </a>
                     </li>
@@ -147,85 +75,18 @@
     <section style="padding-top: 100px; overflow: auto">
         <div class="p-5 mb-4 bg-light rounded-3">
             <div class="container py-5">
-                <h1 class="display-5 fw-bold">Gallerie</h1>
+                <h1 class="display-5 fw-bold">Gallery</h1>
             </div>
         </div>
     </section>
 </header>
 <main>
-    <div class="btwHeader">
-        Ausflug Weinprobe | 09.12.2022
-    </div>
+    <!-- Gallery -->
+    <div class="container" id="gallery-container"></div>
 
-    <!-- Photo Grid -->
-    <div class="row">
-        <div class="column">
-            <img src="./assets/Bilder%20Musikverein/Ausflug%20ins%20Erzgeb.MVO%202009%20(10).JPG" style="width:100%">
-            <img src="./assets/Bilder%20Musikverein/GV%202010%20001.jpg" style="width:100%">
-            <img src="./assets/Bilder%20Musikverein/GV%202010%20003.jpg" style="width:100%">
-
-        </div>
-        <div class="column">
-            <img src="./assets/Bilder%20Musikverein/GV%202010%20007.jpg" style="width:100%">
-            <img src="./assets/Bilder%20Musikverein/GV%202010%20008(1).jpg" style="width:100%">
-            <img src="./assets/Bilder%20Musikverein/Staudammfest%202010%20031.jpg" style="width:100%">
-        </div>
-        <div class="column">
-            <img src="./assets/Bilder%20Musikverein/Staudammfest%202010%20034.jpg" style="width:100%">
-            <img src="./assets/Bilder%20Musikverein/Staudammfest%202010%20035.jpg" style="width:100%">
-            <img src="./assets/Bilder%20Musikverein/Staudammfest%202010%20036.jpg" style="width:100%">
-            <img src="./assets/Bilder%20Musikverein/Staudammfest%202010%20037.jpg" style="width:100%">
-
-        </div>
-        <div class="column">
-            <img src="./assets/Bilder%20Musikverein/Staudammfest%202010%20039.jpg" style="width:100%">
-            <img src="./assets/Bilder%20Musikverein/Staudammfest%202010%20044.jpg" style="width:100%">
-            <img src="./assets/Bilder%20Musikverein/Staudammfest%202010%20045.jpg" style="width:100%">
-            <img src="./assets/Bilder%20Musikverein/Staudammfest%202010%20048.jpg" style="width:100%">
-
-        </div>
-    </div>
-    <div class="btwHeader">
-        <br>
-        Staudammfest | 05.02.2018
-
-    </div>
-    <div class="row">
-        <div class="column">
-            <img src="./assets/Bilder%20Musikverein/Ausflug%20ins%20Erzgeb.MVO%202009%20(10).JPG" style="width:100%">
-            <img src="./assets/Bilder%20Musikverein/GV%202010%20001.jpg" style="width:100%">
-            <img src="./assets/Bilder%20Musikverein/GV%202010%20002.jpg" style="width:100%">
-            <img src="./assets/Bilder%20Musikverein/GV%202010%20003.jpg" style="width:100%">
-            <img src="./assets/Bilder%20Musikverein/GV%202010%20004.jpg" style="width:100%">
-
-        </div>
-        <div class="column">
-            <img src="./assets/Bilder%20Musikverein/GV%202010%20007.jpg" style="width:100%">
-            <img src="./assets/Bilder%20Musikverein/GV%202010%20008(1).jpg" style="width:100%">
-            <img src="./assets/Bilder%20Musikverein/MVO%20Wandern13.09.09%20(2).JPG" style="width:100%">
-            <img src="./assets/Bilder%20Musikverein/Staudammfest%202010%20031.jpg" style="width:100%">
-            <img src="./assets/Bilder%20Musikverein/Staudammfest%202010%20032.jpg" style="width:100%">
-            <img src="./assets/Bilder%20Musikverein/Staudammfest%202010%20033.jpg" style="width:100%">
-        </div>
-        <div class="column">
-            <img src="./assets/Bilder%20Musikverein/Staudammfest%202010%20034.jpg" style="width:100%">
-            <img src="./assets/Bilder%20Musikverein/Staudammfest%202010%20035.jpg" style="width:100%">
-            <img src="./assets/Bilder%20Musikverein/Staudammfest%202010%20036.jpg" style="width:100%">
-            <img src="./assets/Bilder%20Musikverein/Staudammfest%202010%20037.jpg" style="width:100%">
-            <img src="./assets/Bilder%20Musikverein/Staudammfest%202010%20038.jpg" style="width:100%">
-            <img src="./assets/Bilder%20Musikverein/Staudammfest%202010%20052.jpg" style="width:100%">
-
-        </div>
-        <div class="column">
-            <img src="./assets/Bilder%20Musikverein/Staudammfest%202010%20039.jpg" style="width:100%">
-            <img src="./assets/Bilder%20Musikverein/Staudammfest%202010%20044.jpg" style="width:100%">
-            <img src="./assets/Bilder%20Musikverein/Staudammfest%202010%20045.jpg" style="width:100%">
-            <img src="./assets/Bilder%20Musikverein/Staudammfest%202010%20048.jpg" style="width:100%">
-            <img src="./assets/Bilder%20Musikverein/Staudammfest%202010%20043.jpg" style="width:100%">
-            <img src="./assets/Bilder%20Musikverein/GV%202010%20005.jpg" style="width:100%">
-            <img src="./assets/Bilder%20Musikverein/GV%202010%20006.jpg" style="width:100%">
-
-        </div>
+    <div id="lightbox" style="display: none;">
+        <button id="lightbox-close-button"><i class="fa fa-close fa-lg"></i></button>
+        <img alt="lightbox image" id="lightbox-image" src="">
     </div>
 </main>
 <footer>
@@ -316,6 +177,7 @@
     </div>
 </footer>
 
-<script src="script.js"></script>
+<script src="../../navbar.js"></script>
+<script src="./gallery.js"></script>
 </body>
 </html>
