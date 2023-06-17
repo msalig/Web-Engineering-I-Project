@@ -182,7 +182,7 @@ ul {
     height: 120vh;
     background-size: cover;
     background-position: center;
-    background-image: url('Musikverein 2019.jpg');
+    background-image: url('assets/Musikverein 2019.jpg');
 }
 
 .wrap {
@@ -328,7 +328,7 @@ ul {
 }
 
 #main-submit {
-    background: #00a221;
+    background: var(--dark-accent);
     color: #fff;
     display: inline-block;
     font-size: 16px;
@@ -348,7 +348,7 @@ ul {
 }
 
 #main-submit:hover {
-    background: var(--main-color);
+    background: var(--light-accent);
     color: #fff !important;
     -webkit-appearance: none;
 }
@@ -365,18 +365,22 @@ ul {
 }
 
 .dateDiv {
-    width: fit-content;
+    width: 10%;
     height: fit-content;
     align-items: center;
-    padding: 1.5em 3em;
+    margin: 1.5em 2em;
+    display: flex;
+    flex-direction: column;
 }
 
 .eventWeekday {
-
+    width: fit-content;
 }
 
 .date {
-
+    max-lines: 1;
+    width: fit-content;
+    color: var(--light-accent);
 }
 
 .eventTitleMessageDiv {

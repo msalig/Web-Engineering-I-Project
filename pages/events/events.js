@@ -1,57 +1,40 @@
 const data = {
-    events: [
-        {
-            uuid: 1,
-            title: "Dorffest Westerhausen",
-            date: "18. Juni",
-            timestamp: 0,
-            time: "16:30 Uhr - 19:30 Uhr",
-            address: "Sportplatz Westernhausen",
-            description: ""
-        },
-        {
-            uuid: 2,
-            title: "Rockparty Oberkessach",
-            date: "24. Juni",
-            timestamp: 1623865200,
-            time: "16:30 Uhr - 19:30 Uhr",
-            address: "",
-            description: ""
-        },
-        {
-            uuid: 3,
-            title: "Sportfest Rosenberg",
-            date: "30. Juni",
-            timestamp: 0,
-            time: "16:30 Uhr - 19:30 Uhr",
-            address: "Sportplatz Rosenberg",
-            description: ""
-        }
-    ]
+    events: [{
+        uuid: 1,
+        title: "Dorffest Westerhausen",
+        timestamp: 1687098600,
+        date: "18. Juni",
+        time: "16:30 Uhr - 19:30 Uhr",
+        address: "Sportplatz Westernhausen, 74214 Schöntal, Baden-Württemberg, Deutschland",
+        description: ""
+    }, {
+        uuid: 2,
+        title: "Rockparty Oberkessach",
+        timestamp: 1687618800,
+        date: "24. Juni",
+        time: "17:00 Uhr - 18:30 Uhr",
+        address: "Merchinger Straße 10, 74214 Schöntal, Baden-Württemberg, Deutschland",
+        description: ""
+    }, {
+        uuid: 3,
+        title: "Sportfest Rosenberg",
+        timestamp: 1688313600,
+        date: "02. Juli",
+        time: "18:00 Uhr - 22:00 Uhr",
+        address: "Sportgelände Rosenberg, 74749 Rosenberg, Baden-Württemberg, Deutschland",
+        description: ""
+    }]
 };
 
 const weekdays = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
-const monthStrings = [
-    "January",
-    "February",
-    "March",
-    "April",
-    "May",
-    "June",
-    "July",
-    "August",
-    "September",
-    "October",
-    "November",
-    "December"
-];
+const monthStrings = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
 
 async function fetchJsonData() {
     try {
         return data;
         //TODO: Get rid of cors error
         /*
-            return fetch(events.json, {
+            return fetch(data.json, {
             method: "GET",
             mode: 'cors',
             headers: {'Content-Type': 'application/json',}
@@ -81,15 +64,15 @@ async function displayEvents() {
         const dateDiv = document.createElement('div');
         dateDiv.setAttribute('class', 'dateDiv');
 
-        const weekday = document.createElement('h3');
+        const weekday = document.createElement('h6');
         weekday.setAttribute('class', 'eventWeekday');
         weekday.textContent = weekdays[date.getDay()];
 
-        const dateParagraph = document.createElement('p');
-        dateParagraph.setAttribute('class', 'date');
-        dateParagraph.textContent = event.date;
+        const dayOfMonth = document.createElement('h3');
+        dayOfMonth.setAttribute('class', 'date');
+        dayOfMonth.textContent = date.getDate().toString();
 
-        dateDiv.append(weekday, dateParagraph);
+        dateDiv.append(weekday, dayOfMonth);
 
         const titleMessageDiv = document.createElement('div');
         titleMessageDiv.setAttribute('class', 'eventTitleMessageDiv');
@@ -107,9 +90,9 @@ async function displayEvents() {
         eventDiv.append(dateDiv, titleMessageDiv);
 
         const listItem = document.createElement('li');
-        if (previousEventDate == null || date > previousEventDate) {
+        if (previousEventDate == null || (date.getMonth() > previousEventDate.getMonth() && date.getFullYear() >= previousEventDate.getFullYear())) {
             const month = document.createElement('h2');
-            month.textContent = monthStrings[date.getMonth()];
+            month.textContent = monthStrings[date.getMonth()] + " " + date.getFullYear();
             listItem.append(month, document.createElement('hr'));
         }
         listItem.appendChild(eventDiv);
