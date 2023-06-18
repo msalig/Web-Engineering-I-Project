@@ -89,7 +89,7 @@ using HTML, CSS, and JavaScript. The project aimed to assess our skills in web
 development and focused on implementing best practices, user experience, and
 responsive design principles.
 
-If you want to see the entire project description, take a look here: [Project Description](Project Description.pdf)
+If you want to see the entire project description, take a look here: [Project Description](docs/Project Description.pdf)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
