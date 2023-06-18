@@ -24,7 +24,7 @@
     <a href="https://github.com/msalig/Web-Engineering-I-Project/issues">
     <img src="https://img.shields.io/github/issues/msalig/Web-Engineering-I-Project.svg?style=for-the-badge" alt="Issues">
   </a>
-    <a href="https://github.com/msalig/Web-Engineering-I-Project/blob/main/docs/LICENSE">
+    <a href="https://github.com/msalig/Web-Engineering-I-Project/blob/main/docs/LICENSE.txt">
     <img src="https://img.shields.io/github/license/msalig/Web-Engineering-I-Project.svg?style=for-the-badge" alt="License">
   </a>
 </div>
