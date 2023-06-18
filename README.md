@@ -24,7 +24,7 @@
     <a href="https://github.com/msalig/Web-Engineering-I-Project/issues">
     <img src="https://img.shields.io/github/issues/msalig/Web-Engineering-I-Project.svg?style=for-the-badge" alt="Issues">
   </a>
-    <a href="https://github.com/msalig/Web-Engineering-I-Project/blob/main/docs/LICENSE.txt">
+    <a href="https://github.com/msalig/Web-Engineering-I-Project/blob/main/LICENSE.txt">
     <img src="https://img.shields.io/github/license/msalig/Web-Engineering-I-Project.svg?style=for-the-badge" alt="License">
   </a>
 </div>
@@ -132,7 +132,7 @@ _For more examples, please refer to the [Documentation](https://example.com)_
 <!-- LICENSE -->
 ## License
 
-Distributed under the MIT License. See [LICENSE](LICENSE) for more information.
+Distributed under the MIT License. See [LICENSE](./LICENSE.txt) for more information.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
