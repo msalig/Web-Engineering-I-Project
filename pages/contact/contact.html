@@ -5,6 +5,8 @@
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <title>Musikverein Oberkessach</title>
 
+    <link href="../../assets/favicon.png" rel="icon" type="image/x-icon">
+
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
@@ -96,32 +98,35 @@
                     <fieldset>
                         <div class="name-div">
                             <div class="name-div-part">
-                                <label class="form-label" for="firstName" aria-label="firstName">Your firstname</label>
-                                <input class="form-control" id="firstName" placeholder="firstname" required=""
-                                       type="text"
-                                       value="" aria-label="Input your first name">
+                                <label aria-label="firstName" class="form-label" for="firstName">Your firstname</label>
+                                <input aria-label="Input your first name" class="form-control" id="firstName" placeholder="firstname"
+                                       required=""
+                                       type="text" value="">
 
                             </div>
                             <div class="name-div-part">
                                 <label class="form-label" for="surname">Your surname</label>
-                                <input class="form-control" id="surname" placeholder="surname" required="" type="text"
-                                       value="" aria-label="Input your surname">
+                                <input aria-label="Input your surname" class="form-control" id="surname" placeholder="surname" required=""
+                                       type="text" value="">
                             </div>
                         </div>
                         <label class="form-label" for="email">Your email-address</label>
-                        <input class="form-control" id="email" placeholder="you@example.com" required="" type="email" aria-label="Input your email">
+                        <input aria-label="Input your email" class="form-control" id="email" placeholder="you@example.com" required=""
+                               type="email">
 
                         <label class="form-label" for="instrument">Your instrument<span
                                 class="text-muted"> (Optional)</span></label>
-                        <input class="form-control" id="instrument" placeholder="trumpet" type="text" aria-label="Input your instrument, if you play one">
+                        <input aria-label="Input your instrument, if you play one" class="form-control" id="instrument" placeholder="trumpet"
+                               type="text">
 
                         <label class="form-label" for="subject">Subject</label>
-                        <input aria-required="true" class="form-control" id="subject" placeholder="How can I participate"
-                               required="" type="text" aria-label="Input the subject">
+                        <input aria-label="Input the subject" aria-required="true" class="form-control"
+                               id="subject"
+                               placeholder="How can I participate" required="" type="text">
 
                         <label class="form-label" for="message">Your message</label>
-                        <textarea class="form-control" id="message" placeholder="My message is..." required=""
-                                  rows="5" aria-label="Input your message"></textarea>
+                        <textarea aria-label="Input your message" class="form-control" id="message" placeholder="My message is..."
+                                  required="" rows="5"></textarea>
 
                         <hr>
 
