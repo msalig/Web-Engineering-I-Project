@@ -1,3 +1,4 @@
+//Needs to be here, because reading from a json file gives a cors error
 const data = {
     events: [{
         title: "Dorffest Westerhausen",
@@ -34,7 +35,7 @@ const monthStrings = ["January", "February", "March", "April", "May", "June", "J
 async function fetchJsonData() {
     try {
         return data;
-        //TODO: Get rid of cors error
+        //TODO: Get rid of cors error so that the json can be read from the data file
         /*
             return fetch(data.json, {
             method: "GET",

@@ -1,4 +1,4 @@
-//Needs to be here, because reading from a json file doesn't work
+//Needs to be here, because reading from a json file gives a cors error
 const data = {
     events: [
         {
