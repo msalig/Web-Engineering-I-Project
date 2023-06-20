@@ -82,14 +82,14 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
-
 The objective of this project was to develop a website of our choice
 using HTML, CSS, and JavaScript. The project aimed to assess our skills in web
 development and focused on implementing best practices, user experience, and
 responsive design principles.
 
-If you want to see the entire project description, take a look here: [Project Description](docs/Project Description.pdf)
+If you want to see the entire project description, take a look here: [Project Description](./docs/Project%20Description.pdf)
+
+A live preview can be seen here: [Github Pages](https://msalig.github.io/Web-Engineering-I-Project/index.html)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -124,8 +124,6 @@ To get a local copy up and running follow these simple example steps.
 ## Usage
 
 Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
-
-_For more examples, please refer to the [Documentation](https://example.com)_
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
