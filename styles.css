@@ -114,6 +114,10 @@ ul {
     color: var(--light-accent);
 }
 
+.navbar-item .active {
+    color: var(--light-accent);
+}
+
 @media screen and (max-width: 768px) {
     .navbar-container {
         justify-content: space-between;
