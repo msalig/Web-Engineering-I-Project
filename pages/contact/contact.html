@@ -18,7 +18,7 @@
     <!-- Navbar -->
     <section class="fixed-top" id="navbar">
         <nav class="navbar-container container">
-            <a href="#"><img alt="" id="navbar-logo" src="../../assets/logo_klein.png"/></a>
+            <a href="../../index.html"><img alt="Logo" id="navbar-logo" src="../../assets/logo_klein.png"/></a>
             <button aria-controls="navbar-menu" aria-expanded="false" aria-label="Toggle menu" id="navbar-toggle"
                     type="button">
                 <span class="icon-bar"></span>
@@ -98,39 +98,39 @@
                     <fieldset>
                         <div class="name-div">
                             <div class="name-div-part">
-                                <label aria-label="firstName" class="form-label" for="firstName">Your firstname</label>
-                                <input aria-label="Input your first name" class="form-control" id="firstName" placeholder="firstname"
-                                       required=""
+                                <label id="firstNameLabel" class="form-label" for="firstName">Your firstname</label>
+                                <input aria-labelledby="firstNameLabel" class="form-control" id="firstName" placeholder="firstname"
+                                       aria-required="true"
                                        type="text" value="">
 
                             </div>
                             <div class="name-div-part">
-                                <label class="form-label" for="surname">Your surname</label>
-                                <input aria-label="Input your surname" class="form-control" id="surname" placeholder="surname" required=""
+                                <label id="surname-label" class="form-label" for="surname">Your surname</label>
+                                <input aria-labelledby="surname-label" class="form-control" id="surname" placeholder="surname" aria-required="true"
                                        type="text" value="">
                             </div>
                         </div>
-                        <label class="form-label" for="email">Your email-address</label>
-                        <input aria-label="Input your email" class="form-control" id="email" placeholder="you@example.com" required=""
+                        <label id="email-label" class="form-label" for="email">Your email-address</label>
+                        <input aria-labelledby="email-label" class="form-control" id="email" placeholder="you@example.com" aria-required="true"
                                type="email">
 
-                        <label class="form-label" for="instrument">Your instrument<span
+                        <label id="instrument-label" class="form-label" for="instrument">Your instrument<span
                                 class="text-muted"> (Optional)</span></label>
-                        <input aria-label="Input your instrument, if you play one" class="form-control" id="instrument" placeholder="trumpet"
+                        <input aria-labelledby="instrument-label" class="form-control" id="instrument" placeholder="trumpet"
                                type="text">
 
-                        <label class="form-label" for="subject">Subject</label>
-                        <input aria-label="Input the subject" aria-required="true" class="form-control"
+                        <label id="subject-label" class="form-label" for="subject">Subject</label>
+                        <input aria-labelledby="subject-label" aria-required="true" class="form-control"
                                id="subject"
-                               placeholder="How can I participate" required="" type="text">
+                               placeholder="How can I participate" type="text">
 
-                        <label class="form-label" for="message">Your message</label>
-                        <textarea aria-label="Input your message" class="form-control" id="message" placeholder="My message is..."
-                                  required="" rows="5"></textarea>
+                        <label id="message-label" class="form-label" for="message">Your message</label>
+                        <textarea aria-labelledby="message-label" class="form-control" id="message" placeholder="My message is..."
+                                 aria-required="true" rows="5"></textarea>
 
                         <hr>
 
-                        <button class="w-100 btn btn-primary btn-lg button-coloring" type="submit">Send</button>
+                        <button class="w-100 btn btn-primary btn-lg button-coloring" type="submit" aria-label="Send">Send</button>
                     </fieldset>
                 </form>
             </section>

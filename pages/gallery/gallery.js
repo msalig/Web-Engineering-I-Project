@@ -196,6 +196,7 @@ async function generateGallery() {
         // Create the title of the event
         const showMore = document.createElement("button");
         showMore.classList.add("btn", "btn-primary", "gallery-show-more-button", "button-coloring");
+        showMore.ariaLabel = "Show more images";
         showMore.textContent = "Show more";
 
         // Create the row in which the title comes
